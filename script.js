@@ -15,9 +15,16 @@ $(document).ready(function(){
    		};
 	});
 
+	$(document).on('mouseenter', '#icon', function(){
+		$(this).animate({'width':'45px'}, 200);
+	});
+	$(document).on('mouseleave', '#icon', function(){
+		$(this).animate({'width':'40px'}, 200);
+	})
+
 	$(document).on('click', '#scrollmenu', function(){
 		if(!$('.slide-menu').hasClass('slid-out')){
-			$('.slide-menu').addClass('slid-out').css({'display':'block'}).animate({'right': '60px'}, 400);
+			$('.slide-menu').addClass('slid-out').css({'display':'block'}).animate({'right': '65px'}, 400);
 			$('#overlay').fadeIn();
 			$('overlay').toggle();
 		} else if($('.slide-menu').hasClass('slid-out')){
@@ -43,7 +50,7 @@ $(document).ready(function(){
 	});
 
 	$(window).bind('scroll', function(){
-		if( ($(window).scrollTop() < 810) && ($('.slide-menu').hasClass('slid-out')) ){
+		if( ($(window).scrollTop() < 800) && ($('.slide-menu').hasClass('slid-out')) ){
 			$('#overlay').toggle();
 			$('.slide-menu').animate({'right': '-240px'}, 200);
 			$('.slide-menu').removeClass('slid-out');
