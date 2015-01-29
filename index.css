@@ -1,0 +1,256 @@
+/* ----------  ---------- */
+
+/* ---------- Body ---------- */
+
+body{
+	overflow-x: hidden;
+}
+body, .jumbotron{
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Julius Sans One', 'Open Sans', sans-serif;
+	background-color: rgb(220,220,220);
+}
+
+#overlay{
+	position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    top: 0px; 
+    left: 0px; 
+    background-color: #000; 
+    opacity: 0.6;
+    filter: alpha(opacity = 60) !important;
+    display: none;
+    z-index: 10;
+}
+
+/* ---------- Jumbotron ---------- */
+
+.jumbotron{
+	background-image: url('http://i.imgur.com/vrIn63h.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
+	border-radius: 5px;
+	height: 800px;
+	z-index: 1;
+	position: relative;
+	text-align: center;
+}
+.jumbotron a, .jumbotron a:hover{
+	text-decoration: none;
+	color: black;
+}
+#menu{
+	position: absolute;
+	width: 320px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	top: 4.8em;
+	background-color: rgba(180, 180, 180, 0.25);
+	box-shadow: 0px 2px 2px #910818;
+	border-radius: 5px;
+	z-index: 2;
+}
+#name a{
+	font-size: 1.75em;
+}
+.nav{
+	padding: 10px;
+}
+.nav:hover{
+	box-shadow: 0px 2px 2px #910818;
+}
+
+
+/* ---------- Scrollmenu ---------- */
+
+#scrollmenu{
+	display: none;
+	position: fixed;
+	right: 15px;
+	z-index: 20;
+}
+#icon{
+	height: auto;
+	width: 40px;
+}
+
+.slide-menu{
+	width: 240px;
+	height: 340px;
+	display: none;
+	position: fixed;
+	right: -60px;
+	background-color: rgba(200, 200, 200, 0.75);
+	box-shadow: 0px 2px 2px #910818;
+	z-index: 9999;
+}
+.slide-menu ul{
+	list-style: none;
+}
+.close-menu{
+	font-family: 'Julius Sans One', 'Open Sans', sans-serif;
+	padding: 5px;
+	box-shadow: 0px 2px 2px #910818;
+	cursor: pointer;
+	font-size: 1em;
+}
+.slide-nav{
+	padding: 10px;
+}
+.slide-nav:hover{
+	box-shadow: 0px 2px 2px #910818;
+}
+.slide-menu a{
+	text-decoration: none;
+	color: black;
+}
+.slid-out{
+}
+
+
+/* ---------- About ---------- */
+
+#about-block{
+	position: relative;
+	background-color: rgba(170, 57, 57, 0.5);
+	border-radius: 5px;
+	margin-top: 1em;
+	overflow: auto;
+	height: 480px;
+}
+#about-title{
+	position: relative;
+	top: 0.5em;
+	width: 90%;
+	border: none;
+	border-radius: 5px;
+	z-index: 1;
+	margin: 0 0 0 1em;
+	padding-left: 1em;
+	background-color: #D46A6A;
+}
+#about-title h1{
+	font-size: 5em;
+	font-family: cursive;
+	z-index: 1;
+	color: black;
+	margin: 0;
+}
+#about-text{
+	width: 680px;
+	z-index: 10;
+	padding: 1em 0 1em 1.5em;
+	float: left;
+}
+#about-img{
+	height: auto;
+	width: 320px;
+	border-radius: 5px;
+	float: right;
+	margin: 1.5em 6em 0 0;
+}
+
+
+/* ---------- Testimonials ---------- */
+
+#testim-block{
+	position: relative;
+	background-color: rgba(34, 102, 102, 0.5);
+	border-radius: 5px;
+	margin-top: 1em;
+	height: 480px;
+}
+#testim-title{
+	position: relative;
+	top: 0.5em;
+	width: 90%;
+	border: none;
+	border-radius: 5px;
+	z-index: 1;
+	margin: 0 0 0 1em;
+	padding-left: 1em;
+	background-color: #407F7F;
+}
+#testim-title h1{
+	font-size: 5em;
+	font-family: cursive;
+	z-index: 1;
+	color: black;
+	margin: 0;
+}
+#testim-img{
+	height: auto;
+	width: 320px;
+	border-radius: 5px;
+	float: left;
+	margin: 1.5em 1em 0 1em;
+}
+#testim-text{
+	width: 680px;
+	padding: 1em 1.5em 1em 1.5em;
+	position: absolute;
+	left: 350px;
+}
+
+
+/* ---------- Blog ---------- */
+
+#blog-block{
+	position: relative;
+	background-color: rgba(122, 159, 53, 0.5);
+	border-radius: 5px;
+	margin-top: 1em;
+	overflow: auto;
+	height: 480px;
+}
+#blog-title{
+	position: relative;
+	top: 0.5em;
+	width: 90%;
+	border: none;
+	border-radius: 5px;
+	z-index: 1;
+	margin: 0 0 0 1em;
+	padding-left: 1em;
+	background-color: #A5C663;
+}
+#blog-title h1{
+	font-size: 5em;
+	font-family: cursive;
+	z-index: 1;
+	color: black;
+	margin: 0;
+}
+#blog-text{
+	width: 680px;
+	z-index: 10;
+	padding: 1em 0 1em 1.5em;
+	float: left;
+}
+#blog-img{
+	height: auto;
+	width: 320px;
+	border-radius: 5px;
+	float: right;
+	margin: 1.5em 6em 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
