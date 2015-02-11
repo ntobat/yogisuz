@@ -21,20 +21,21 @@
 #content, #nav-button{
 	float: right;
 }
-a, .expand{
+a{
 	text-decoration: none;
 }
 #copyright, #contact{
 	padding: 15px;
 }
-#main h2, #content, #contact a, #contact p, #copyright, #motto{
+#main h2, #content, .about-p, #contact a, #contact p, #copyright{
 	font-family: 'Merriweather', 'Open Sans', sans-serif;
 	line-height: 150%;
 }
-#icon, #ryt, #expand{
+#icon, #ryt, #img1, #img2, #img3{
 	height: auto;
 }
 #overlay{
+	position: fixed; 
     width: 100%; 
     height: 100%; 
     top: 0px; 
@@ -109,59 +110,54 @@ header:hover{
 .slid-out{}
 
 
-/* ---------- Content ---------- */
-
-#main{
-	padding-top: 160px;
-}
-
-
 /* ---------- Title ---------- */
 
 #title{
 	font-size: 2em;
 	height: auto;
-	background-color: #C56F99;
+	background-color: #7663A3;
 	padding: 10px;
 }
 #title h1{
 	color: white;
 }
+
+
+/* ---------- Content ---------- */
+
+#main{
+	padding-top: 160px;
+}
 #content{
-	width: 80%;
 	margin-top: 40px;
 	margin-bottom: 100px;
+	width: 80%;
 	padding-right: 20px;
+	text-align: justify;
 }
-#expand{
-	width: 15px;
+#img1{
+	width: 90%;
+	padding: 20px 0;
+	border: none;
+	border-radius: 15px;
 }
-.expand{
+#img2, #img3{
+	width: 45%;
+	padding: 10px 10px 0 0;
+}
+.about-p{
+	font-size: 1.2em;
+	width: 90%;
+}
+p a{
+	text-decoration: none;
 	color: #32B9ED;
 }
-.address{
-	display: none;
-	margin-left: 20px;
-	color: gray;
-}
-.rotated {
-  transform: rotate(180deg);
-  -ms-transform: rotate(180deg); /* IE 9 */
-  -moz-transform: rotate(180deg); /* Firefox */
-  -webkit-transform: rotate(180deg); /* Safari and Chrome */
-  -o-transform: rotate(180deg); /* Opera */
-}
-
 
 /* ---------- Footer ---------- */
 
 footer{
 	clear: both;
-}
-#motto{
-	text-align: center;
-	font-size: 2.4em;
-	font-style: italic;
 }
 #quote{
 	font-family: 'Marck Script', cursive;
@@ -238,20 +234,15 @@ footer{
 	#title{
 		font-size: 1.2em;
 		padding: 0.1em;
-		height: auto;
 	}
 	#title h1{
 		height: 90%;
 	}
-	#content p{
+	.about-p{
 		font-size: .8em;
 	}
 
+
 }
-
-
-
-
-
 
 
